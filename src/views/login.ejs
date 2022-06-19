@@ -1,0 +1,72 @@
+<%- include('./partials/mainTag.ejs') %>
+    <%- include('./partials/navbar.ejs') %>
+    <%- include('./partials/aside.ejs') %>
+<!-- Login -->
+<div class="login">
+    <div class="login-contain">
+        <div class="contain-left">
+            <div class="text-start">
+                <h1>Log In</h1>
+                <p>We welcome you again!</p>
+            </div>
+            <div class="text-end">
+                <p>New to Bufé? <a href="./logUp.html">Sign up for free</a></p>
+            </div>
+        </div>
+        <div class="contain-right">
+            <form action="" class="logIn">
+                <div class="login-title">
+                    <h2>Log In</h2>
+                    <p>New to Bufé? <a href="./logUp.html">Sign up for free</a></p>
+                </div>
+                <div class="Email">
+                    <label for="email">Email or phone number</label>
+                    <input type="text" type="number" id="email" placeholder="Email or phone number">
+                    <p class="error-email">Enter the email address.</p>
+                    <p class="error-email-incorrect">The email or mobile number you entered is not connected to an account. Create a new Bufé account.</p>
+                </div>
+                <div class="password">
+                    <div class="label-forgot">
+                        <label for="password">Password</label>
+                        <a href="#Forgout-password">Forgot your password?</a>
+                    </div>
+                    <input type="password" id="password" placeholder="Password">
+                    <p class="error-password">Enter your password</p>
+                    <p class="error-password-Incorrect">The password you entered is incorrect. <a href="#ForgotPassword">Forgot your password?</a> </p>
+                </div>
+                <p class="contract">By singing in, I agree <a href="#Privace-Policy">Bufé's Privacy Policy</a> and <a href="#Terms-Services">Term of Service</a></p>
+                <input class="login-button" type="submit" value="Log In">
+                <div class="not-close">
+                    <input type="checkbox" name="" id="not-close">
+                    <label for="not-close">Do not close your account</label>
+                </div>
+                <div class="logIn-alternative">
+                    <p class="login-with">Login with</p>
+                    <div class="alternative">
+                        <a href="#sso" class="sso">
+                            <i class='bx bxs-key'></i>
+                            <p>SSO</p>
+                        </a>
+                        <a href="#Apple" class="apple">
+                            <i class='bx bxl-apple'></i>
+                            <p>Apple</p>
+                        </a>
+                        <a href="#google" class="google">
+                            <i class='bx bxl-google'></i>
+                            <p>Google</p>
+                        </a>
+                        <a href="#facebook" class="facebook">
+                            <i class='bx bxl-facebook-circle'></i>
+                            <p>Facebook</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="login-footer">
+                    <span>Bufé is protected by reCAPTCHA and its <a href="#Privace-Policy">Privacy Policy</a>  and <a href="#Terms-Services">Terms of Service</a> apply.</span>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- end Login -->
+<%- include('./partials/endTag.ejs') %>

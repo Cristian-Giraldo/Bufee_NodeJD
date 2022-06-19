@@ -1,0 +1,82 @@
+/*_restaurants-container*/
+.restaurants-container{
+    z-index: -1;
+    margin-left: 300px; 
+    display: flex;
+    & .restaurants{
+        display: flex;
+        flex-wrap: wrap; 
+        & .restaurant{
+            background-position: center;
+            width: 300px;
+            height: 190px;
+            margin: 20px 15px 0 10px;
+            &:hover{
+                box-shadow: rgba(60, 64, 67, 0.26) 0px 1px 2px 0px, rgba(60, 64, 67, 0.05) 0px 1px 3px 1px;
+            }
+            a{
+                display: flex;
+                flex-direction: column;
+                text-decoration: none;
+                color: black;
+                position: relative; 
+                img{
+                    width: 300px;
+                    height: 120px;
+                    object-fit: cover;
+                }
+                & .bxs-heart{
+                    position: absolute;
+                    font-size: 19px;
+                    right: 10px;
+                    top: 8px;
+                    z-index: 2;
+                    padding: 5px;
+                    color: rgba(255, 255, 255, 0.651);;
+                    backdrop-filter: blur(15px);
+                    &:hover{
+                        color: #ff0000;
+                    }
+                }
+                & .data{
+                    align-self: flex-end;
+                    display: flex;
+                    flex-direction: column; 
+                    width: 100%;
+                    padding: 6.5px 0;
+                    & .initial-data{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-bottom: 5px;
+                        padding: 0 15px;
+                        & .name{
+                            font-size: 17px;
+                        } 
+                        & .rating{
+                            font-size: 14px;
+                            padding: 5px 5px;
+                            border-radius: 50%;
+                            background-color: rgba(0, 0, 0, 0.041);
+                        }
+                    }
+                    & .footer-data{
+                        display: flex;
+                        justify-content: space-between;
+                        font-size: 14px;
+                        margin: 0 15px;
+                        & .delivery-Fee{
+                            display: flex;
+                            & .Fee{
+                                margin-right: 10px;
+                            }
+                        }
+                        span{
+                            color: rgba(0, 0, 0, 0.8);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
